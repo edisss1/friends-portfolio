@@ -1,0 +1,13 @@
+interface NavBarLinkProps {
+    text: string
+    element: string
+}
+
+const NavBarLink = ({ text, element }: NavBarLinkProps) => {
+    return (
+        <li className="relative after:content-[''] after:w-full after:h-1 after:bg-black/60 after:rounded-full after:absolute after:-bottom-1 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-all after:duration-300 after:origin-left">
+            <a href={element}>{text}</a>
+        </li>
+    )
+}
+export default NavBarLink

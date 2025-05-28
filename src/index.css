@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Notable&family=Varela+Round&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --color-bg: #f5f5f5;
+    --color-text: #111111;
+    --color-section-bg: #df7142;
+    --font-section-header: "Notable", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Varela Round", sans-serif;
+    @apply text-text bg-bg;
+}
