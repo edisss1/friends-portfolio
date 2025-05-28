@@ -11,5 +11,6 @@
 body {
     margin: 0;
     font-family: "Varela Round", sans-serif;
+    scroll-behavior: smooth;
     @apply text-text bg-bg;
 }

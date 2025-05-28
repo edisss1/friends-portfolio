@@ -1,13 +1,14 @@
 interface SectionHeaderProps {
     children: React.ReactNode
     id?: string
+    className?: string
 }
 
-const SectionHeader = ({ children, id }: SectionHeaderProps) => {
+const SectionHeader = ({ children, id, className }: SectionHeaderProps) => {
     return (
         <h2
             id={id}
-            className="text-[clamp(2rem,10vw,8rem)] leading-none translate-y-[-0.3em]  font-section-header  text-white text-center"
+            className={`text-[clamp(2rem,10vw,8rem)] font-section-header  text-white text-center leading-none ${className}  `}
         >
             {children}
         </h2>
